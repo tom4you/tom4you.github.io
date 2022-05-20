@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header
+/* Warna Dan posisi text */
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    z-index: 10;
+    background: #5b639c;
+}
+header .logo
+/* Ukuran Logo text */
+{
+    position: relative;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+header .navigation
+/* Untuk Meratakan menu bukan respon hp */
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+header .navigation li
+/* Untuk mengasih space menunya */
+{
+    list-style: none;
+    margin: 0 10px;
+}
+header .navigation li a
+/* Mengasih warna menu jadi putih */
+{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+header .navigation li a:hover
+/* Mewarnai Kalau di klik menunya */
+{
+    color: #ffeb3b;
+}
+.banner
+/* Memberi jarak logo dan teks */
+{
+    background: #434978;
+    padding: 200px 100px 100px;
+    min-height: 100vh;
+    display: flex;
+        justify-content: space-around;
+    align-items: center;
+}
+.banner .content
+/* Mengasih space dalam text */
+{
+    max-width: 400px;
+}
+.banner .content h2
+/* Mengasih teks pada h2 konten */
+{
+    font-size: 3em;
+    color: #fff;
+}
+.banner .content p
+/* Mengisi Warna pada teks p */
+{
+    font-size: 1em;
+    color: #fff;
+}
+.banner .content a
+/* Membentuk buttonnya */
+{
+    display: inline-block;
+    background: #fff;
+    color: 434978;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.banner .image
+{
+    max-width: 400px;
+    margin-left: 50px;
+}
+/* Disini Responsivenya yak cuy */
+@media (max-width: 991px)
+{
+    header
+    {
+        padding: 10px 20px;
+    }
+    .banner
+    {
+        padding: 150px 20px 50px;
+        flex-direction: column-reverse;
+    }
+    .banner .image
+    {
+        margin-left: 0;
+        max-width: 80%;
+    }
+    .banner .content h2
+    {
+        font-size: 2em;
+    }
+}
+@media (max-width: 600px)
+{
+    header .search
+    {
+        width: 100%;
+    }
+    .banner .image
+    {
+        margin-top: 30px;
+    }
+}
